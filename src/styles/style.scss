@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 /*======================================
 //--//-->   STYLES
@@ -171,7 +171,7 @@ a:hover {
 }
 
 .title-left:before {
-  content: "";
+  content: '';
   position: absolute;
   height: 3px;
   background-color: $primary;
@@ -354,7 +354,7 @@ a:hover {
 }
 
 #preloader:before {
-  content: "";
+  content: '';
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
@@ -422,7 +422,7 @@ a:hover {
 
 .navbar-b.navbar-trans .nav-link:before,
 .navbar-b.navbar-reduce .nav-link:before {
-  content: "";
+  content: '';
   position: absolute;
   margin-left: 0px;
   width: 0%;
@@ -1014,7 +1014,7 @@ a:hover {
 
 .widget-sidebar .list-sidebar li:before {
   position: absolute;
-  content: "";
+  content: '';
   width: 10px;
   height: 1px;
   left: 0;
