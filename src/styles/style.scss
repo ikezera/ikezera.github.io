@@ -1,17 +1,12 @@
-/*
-  Theme Name: DevFolio
-  Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
+@import 'variables';
 
 /*======================================
-//--//-->   STYLES GENERALES
+//--//-->   STYLES
 ======================================*/
 
 body {
   background-color: #f5f5f5;
-  color: #4e4e4e;
+  color: $gray;
 }
 
 h1,
@@ -20,16 +15,16 @@ h3,
 h4,
 h5,
 h6 {
-  color: #1e1e1e;
+  color: $header;
 }
 
 a {
-  color: #1e1e1e;
+  color: $header;
   transition: all 0.5s ease-in-out;
 }
 
 a:hover {
-  color: #24b67e;
+  color: $primary;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -39,7 +34,7 @@ a:hover {
 }
 
 .color-a {
-  color: #24b67e;
+  color: $primary;
 }
 
 .color-d {
@@ -47,7 +42,7 @@ a:hover {
 }
 
 .color-text-a {
-  color: #4e4e4e;
+  color: $gray;
 }
 
 .box-shadow,
@@ -60,7 +55,7 @@ a:hover {
 
 .box-shadow-a,
 .button:hover {
-  box-shadow: 0 0 0 4px #bbf5df;
+  box-shadow: 0 0 0 4px $lightPurple;
 }
 
 .display-5 {
@@ -90,7 +85,7 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: #24b67e;
+  background-color: $primary;
 }
 
 .overlay-mf {
@@ -100,7 +95,7 @@ a:hover {
   padding: 0;
   height: 100%;
   width: 100%;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .paralax-mf {
@@ -137,7 +132,7 @@ a:hover {
 
 .title-s {
   font-weight: 600;
-  color: #1e1e1e;
+  color: $header;
   font-size: 1.1rem;
 }
 
@@ -154,13 +149,13 @@ a:hover {
 }
 
 .subtitle-a {
-  color: #4e4e4e;
+  color: $gray;
 }
 
 .line-mf {
   width: 40px;
   height: 5px;
-  background-color: #24b67e;
+  background-color: $primary;
   margin: 0 auto;
 }
 
@@ -179,7 +174,7 @@ a:hover {
   content: '';
   position: absolute;
   height: 3px;
-  background-color: #24b67e;
+  background-color: $primary;
   width: 100px;
   bottom: -12px;
 }
@@ -216,14 +211,14 @@ a:hover {
   border-radius: 50%;
   line-height: 1.4;
   margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px #24b67e;
+  box-shadow: 0 0 0 3px $primary;
   transition: all 500ms ease;
 }
 
 .socials .ico-circle:hover {
-  background-color: #24b67e;
+  background-color: $primary;
   color: #fff;
-  box-shadow: 0 0 0 3px #bbf5df;
+  box-shadow: 0 0 0 3px $lightPurple;
   transition: all 500ms ease;
 }
 
@@ -246,7 +241,7 @@ a:hover {
 }
 
 .list-ico span {
-  color: #24b67e;
+  color: $primary;
   margin-right: 10px;
 }
 
@@ -260,7 +255,7 @@ a:hover {
   line-height: 1.55;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0 0 0 10px #24b67e;
+  box-shadow: 0 0 0 10px $primary;
   display: block;
 }
 
@@ -279,19 +274,19 @@ a:hover {
   width: 18px;
   height: 7px;
   margin: 5px 5px;
-  background: #bbf5df;
-  border: 0px solid #bbf5df;
+  background: $lightPurple;
+  border: 0px solid $lightPurple;
   display: block;
   transition: all 0.6s ease-in-out;
   cursor: pointer;
 }
 
 .owl-theme .owl-dots .owl-dot:hover span {
-  background-color: #bbf5df;
+  background-color: $lightPurple;
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
-  background-color: #1B1B1B;
+  background-color: #1b1b1b;
   width: 25px;
 }
 
@@ -307,8 +302,8 @@ a:hover {
   position: fixed;
   width: 42px;
   height: 42px;
-  background-color: #24b67e;
-  opacity: .7;
+  background-color: $primary;
+  opacity: 0.7;
   font-size: 1.6rem;
   line-height: 1.5;
   text-align: center;
@@ -326,7 +321,7 @@ a:hover {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #24b67e;
+  background: $primary;
   color: #fff;
   width: 44px;
   height: 44px;
@@ -359,12 +354,12 @@ a:hover {
 }
 
 #preloader:before {
-  content: "";
+  content: '';
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #f2f2f2;
-  border-top: 6px solid #24b67e;
+  border-top: 6px solid $primary;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -401,7 +396,7 @@ a:hover {
 ======================================*/
 
 .navbar-b {
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background-color: transparent;
   padding-top: 1.563rem;
   padding-bottom: 1.563rem;
@@ -439,7 +434,7 @@ a:hover {
 
 .navbar-b.navbar-trans .nav-link:hover,
 .navbar-b.navbar-reduce .nav-link:hover {
-  color: #1B1B1B;
+  color: #1b1b1b;
 }
 
 .navbar-b.navbar-trans .nav-link:hover:before,
@@ -474,37 +469,37 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce {
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background-color: #fff;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: #24b67e;
+  color: $primary;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
-  background-color: #24b67e;
+  background-color: $primary;
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
-  color: #24b67e;
+  color: $primary;
 }
 
 .navbar-b.navbar-reduce .show > .nav-link,
 .navbar-b.navbar-reduce .active > .nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
-  color: #24b67e;
+  color: $primary;
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
-  color: #24b67e;
+  color: $primary;
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
-  background-color: #1B1B1B;
+  background-color: #1b1b1b;
 }
 
 .navbar-b .navbar-brand {
@@ -527,18 +522,18 @@ a:hover {
 }
 
 .navbar-b .dropdown-menu .dropdown-item {
-  padding: .7rem 1.7rem;
+  padding: 0.7rem 1.7rem;
   transition: all 500ms ease;
 }
 
 .navbar-b .dropdown-menu .dropdown-item:hover {
-  background-color: #24b67e;
+  background-color: $primary;
   color: #fff;
   transition: all 500ms ease;
 }
 
 .navbar-b .dropdown-menu .dropdown-item.active {
-  background-color: #24b67e;
+  background-color: $primary;
 }
 
 /*--/ Hamburger Navbar /--*/
@@ -567,9 +562,9 @@ a:hover {
 
 .navbar-toggler span:nth-child(1),
 .navbar-toggler span:nth-child(3) {
-  transition: -webkit-transform .35s ease-in-out;
-  transition: transform .35s ease-in-out;
-  transition: transform .35s ease-in-out, -webkit-transform .35s ease-in-out;
+  transition: -webkit-transform 0.35s ease-in-out;
+  transition: transform 0.35s ease-in-out;
+  transition: transform 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(1) {
@@ -619,7 +614,7 @@ a:hover {
   padding: 0;
   height: 100%;
   width: 100%;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .intro .intro-title {
@@ -652,15 +647,15 @@ a:hover {
 
 .intro-single .breadcrumb {
   background-color: transparent;
-  color: #24b67e;
+  color: $primary;
 }
 
 .intro-single .breadcrumb .breadcrumb-item:before {
-  color: #bbf5df;
+  color: $lightPurple;
 }
 
 .intro-single .breadcrumb .breadcrumb-item.active {
-  color: #bbf5df;
+  color: $lightPurple;
 }
 
 .intro-single .breadcrumb a {
@@ -685,19 +680,19 @@ a:hover {
 }
 
 .skill-mf span {
-  color: #4e4e4e;
+  color: $gray;
 }
 
 .skill-mf .progress {
-  background-color: #bbf5df;
-  margin: .5rem 0 1.2rem 0;
+  background-color: $lightPurple;
+  margin: 0.5rem 0 1.2rem 0;
   border-radius: 0;
-  height: .7rem;
+  height: 0.7rem;
 }
 
 .skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #24b67e;
+  height: 0.7rem;
+  background-color: $primary;
 }
 
 /*======================================
@@ -714,13 +709,13 @@ a:hover {
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
-  background-color: #24b67e;
-  box-shadow: 0 0 0 10px #bbf5df;
+  background-color: $primary;
+  box-shadow: 0 0 0 10px $lightPurple;
 }
 
 .service-box .service-ico {
   margin-bottom: 1rem;
-  color: #1e1e1e;
+  color: $header;
 }
 
 .service-box .ico-circle {
@@ -732,11 +727,11 @@ a:hover {
   font-size: 1.4rem;
   text-transform: uppercase;
   text-align: center;
-  padding: .4rem 0;
+  padding: 0.4rem 0;
 }
 
 .service-box .s-description {
-  color: #4e4e4e;
+  color: $gray;
 }
 
 /*======================================
@@ -756,7 +751,7 @@ a:hover {
   height: 60px;
   width: 60px;
   line-height: 1.8;
-  box-shadow: 0 0 0 10px #bbf5df;
+  box-shadow: 0 0 0 10px $lightPurple;
 }
 
 .counter-num .counter {
@@ -794,26 +789,26 @@ a:hover {
 }
 
 .work-content .w-more {
-  color: #4e4e4e;
-  font-size: .8rem;
+  color: $gray;
+  font-size: 0.8rem;
 }
 
 .work-content .w-more .w-ctegory {
-  color: #24b67e;
+  color: $primary;
 }
 
 .work-content .w-like {
   font-size: 2.5rem;
-  color: #24b67e;
+  color: $primary;
   float: right;
 }
 
 .work-content .w-like a {
-  color: #24b67e;
+  color: $primary;
 }
 
 .work-content .w-like .num-like {
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .w-title {
@@ -852,7 +847,7 @@ a:hover {
 
 .testimonial-box .comit {
   font-size: 2rem;
-  color: #24b67e;
+  color: $primary;
   background-color: #fff;
   width: 52px;
   height: 52px;
@@ -885,7 +880,7 @@ a:hover {
   color: #fff;
   padding: 0 15px 5px;
   overflow: hidden;
-  background-color: #24b67e;
+  background-color: $primary;
   border-radius: 4px;
 }
 
@@ -893,18 +888,18 @@ a:hover {
   color: #fff;
   display: inline-block;
   text-transform: uppercase;
-  font-size: .7rem;
-  letter-spacing: .1px;
+  font-size: 0.7rem;
+  letter-spacing: 0.1px;
   margin-bottom: 0;
 }
 
 .card-blog .card-title {
   font-size: 1.3rem;
-  margin-top: .6rem;
+  margin-top: 0.6rem;
 }
 
 .card-blog .card-description {
-  color: #4e4e4e;
+  color: $gray;
 }
 
 .card-blog .post-author {
@@ -912,7 +907,7 @@ a:hover {
 }
 
 .card-blog .post-date {
-  color: #4e4e4e;
+  color: $gray;
   display: inline-block;
   float: right;
 }
@@ -939,7 +934,7 @@ a:hover {
 }
 
 .blog-wrapper .post-meta ul {
-  border-left: 4px solid #24b67e;
+  border-left: 4px solid $primary;
   margin-top: 1rem;
 }
 
@@ -949,15 +944,15 @@ a:hover {
 }
 
 .blog-wrapper .post-meta ul a {
-  color: #24b67e;
+  color: $primary;
 }
 
 .blog-wrapper .post-meta ul span {
-  color: #1e1e1e;
+  color: $header;
 }
 
 .blog-wrapper .blockquote {
-  border-left: 4px solid #24b67e;
+  border-left: 4px solid $primary;
   padding: 18px;
   font-style: italic;
 }
@@ -989,11 +984,11 @@ a:hover {
 }
 
 .box-comments .list-comments a {
-  color: #24b67e;
+  color: $primary;
 }
 
 .box-comments .list-comments span {
-  color: #1e1e1e;
+  color: $header;
   font-style: italic;
 }
 
@@ -1006,7 +1001,7 @@ a:hover {
 .widget-sidebar .sidebar-title {
   font-size: 1.6rem;
   font-weight: 600;
-  border-left: 5px solid #24b67e;
+  border-left: 5px solid $primary;
   padding-left: 15px;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -1019,11 +1014,11 @@ a:hover {
 
 .widget-sidebar .list-sidebar li:before {
   position: absolute;
-  content: "";
+  content: '';
   width: 10px;
   height: 1px;
   left: 0;
-  background-color: #24b67e;
+  background-color: $primary;
   top: 20px;
 }
 
@@ -1034,8 +1029,8 @@ a:hover {
 }
 
 .sidebar-search .btn-search {
-  background-color: #24b67e;
-  border-color: #24b67e;
+  background-color: $primary;
+  border-color: $primary;
   border-radius: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -1043,9 +1038,9 @@ a:hover {
 
 .widget-tags ul li {
   display: inline-block;
-  background-color: #24b67e;
-  padding: .2rem .6rem;
-  margin-bottom: .5rem;
+  background-color: $primary;
+  padding: 0.2rem 0.6rem;
+  margin-bottom: 0.5rem;
   border-radius: 15px;
 }
 
@@ -1076,7 +1071,7 @@ footer {
 }
 
 footer .copyright {
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
 }
 
 footer .credits {
@@ -1092,8 +1087,8 @@ footer .credits a {
 ======================================*/
 
 #sendmessage {
-  color: #24b67e;
-  border: 1px solid #24b67e;
+  color: $primary;
+  border: 1px solid $primary;
   display: none;
   text-align: center;
   padding: 15px;
@@ -1131,7 +1126,7 @@ footer .credits a {
 
 .button {
   display: inline-block;
-  padding: .3rem .6rem;
+  padding: 0.3rem 0.6rem;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -1139,7 +1134,7 @@ footer .credits a {
   -ms-user-select: none;
   user-select: none;
   font-size: 1rem;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   border: 1px solid transparent;
   transition: all 500ms ease;
   cursor: pointer;
@@ -1150,19 +1145,19 @@ footer .credits a {
 }
 
 .button:hover {
-  background-color: #0d9963;
+  background-color: #5a03ac;
   color: #fff;
   transition: all 500ms ease;
 }
 
 .button-a {
-  background-color: #24b67e;
+  background-color: $primary;
   color: #fff;
-  border-color: #bbf5df;
+  border-color: $lightPurple;
 }
 
 .button-big {
-  padding: .9rem 2.3rem;
+  padding: 0.9rem 2.3rem;
   font-size: 1.2rem;
 }
 
@@ -1171,10 +1166,10 @@ footer .credits a {
 }
 
 .btn-lg {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
 }
 
 @media (min-width: 577px) {
