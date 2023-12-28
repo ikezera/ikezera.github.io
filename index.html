@@ -1,14 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <title>Ikezera's website</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
-    <title>Ikezera App</title>
+    <meta property="og:url" content="https://ikezera.github.io/" />
+    <meta property="og:title" content="Ikezera Studio" />
+    <meta property="og:image" content="https://ikezera.github.io/images/testimonial-2.jpg" />
+    <meta property="og:description" content="Henrique Thomaz Miguel &mdash; software engineer &amp; AI student" />
+
+    <!-- Favicons -->
+    <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png" />
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+  <body id="page-top">
+    <!--/ Nav Star /-->
+    <include src="./src/components/Navbar.html"></include>
+
+    <!--/ Banner /-->
+    <include src="./src/components/Banner.html"></include>
+
+    <!--/ About /-->
+    <include src="./src/components/About.html"></include>
+
+    <!--/ Service /-->
+    <include src="./src/components/Service.html"></include>
+
+    <!--/ Skills /-->
+    <include src="./src/components/Skills.html"></include>
+
+    <!--/ Section Portfolio Star /-->
+    <include src="./src/components/Portfolio.html"></include>
+
+    <!--/ Section Contact-Footer Star /-->
+    <include src="./src/components/Contact.html"></include>
+
+    <!--/ Top anchor /-->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/popper/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/counterup/jquery.waypoints.min.js"></script>
+    <script src="lib/counterup/jquery.counterup.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+
+    <script defer type="module" src="./src/scripts/main.js"></script>
   </body>
 </html>
