@@ -98,6 +98,15 @@ import '../styles/style.scss';
     } else {
       $('.scrolltop-mf').fadeOut(1000, 'easeInOutExpo');
     }
+    var logos = document.getElementById('logo-ikezera');
+    var img = document.getElementById('mainNav');
+    if (img.classList.contains('navbar-reduce')) {
+      logos.classList.add('bg-logo_dark');
+      logos.classList.remove('bg-logo_light');
+    } else {
+      logos.classList.add('bg-logo_light');
+      logos.classList.remove('bg-logo_dark');
+    }
   });
 
   /*--/ Star Typed /--*/

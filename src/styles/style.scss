@@ -1645,3 +1645,19 @@ footer .credits a {
     bottom: 15px;
   }
 }
+.bg-logo_light {
+  width: 120px;
+  height: 40px;
+  background: url('/public/images/logos_sprites.webp');
+  background-position: -0px -0px;
+  display: inline-block;
+  background-size: 100% auto;
+}
+.bg-logo_dark {
+    width: 120px;
+    height: 40px;
+    background: url('/public/images/logos_sprites.webp');
+    background-position: -0px -120px;
+    display: inline-block;
+    background-size: 100% auto;
+}
